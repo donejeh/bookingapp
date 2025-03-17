@@ -14,7 +14,7 @@ const hotelSchema = new Schema({
   price: { type: Number, required: true },
   rooms: { type: [String] },
   cheapestPrice: { type: Number, required: true },
-  featured: { type: Boolean, default: false },
+  featured: { type: Boolean, default: false }
 });
 
 export default mongoose.model('Hotel', hotelSchema);
